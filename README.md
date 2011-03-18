@@ -30,7 +30,7 @@ In your POM:
                            </dependency>
                        </dependencies>
                        <configuration>
-                           <configLocation>build-tools/src/main/resources/itm_checks.xml</configLocation>
+                           <configLocation>itm_checks.xml</configLocation>
     			           <enableRulesSummary>false</enableRulesSummary>
                        </configuration>
                    </plugin>
