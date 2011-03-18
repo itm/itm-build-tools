@@ -50,11 +50,11 @@ In your POM:
 
 Generate a report on the command line:
 
-  $ mvn checkstyle:checkstyle site
+    $ mvn checkstyle:checkstyle site
 
 This generates a checkstyle reportand a HTML page. "site" makes sure, that all css-Files, etc. are avaiable. The html page(s) is(are) located at ${module}/target/site/checkstyle.html. If you are only interested in the plain report, you can leave out the "site" target.
 
-More info can be found at: [checkstyle] und [maven-checkstyle-plugin].
+More info can be found at: [Checkstyle Project][checkstyle] and [Maven Checkstyle Plugin][maven-checkstyle-plugin].
 
 
 [checkstyle]:http://checkstyle.sourceforge.net/
