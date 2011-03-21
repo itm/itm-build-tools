@@ -55,13 +55,6 @@ In your POM:
 			   <url>http://www.itm.uni-luebeck.de/projects/maven/releases/</url>
 		   </pluginRepository>		   
 	   </pluginRepositories>
-         <!-- optional -->
-         <repositories>
-	       <repository>
-			  <id>itm-maven-repository-releases</id>
-			  <url>http://www.itm.uni-luebeck.de/projects/maven/releases/</url>
-	       </repository>
-       </repositories>
     </project>
 
 Generate a report on the command line:
