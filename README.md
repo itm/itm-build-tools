@@ -48,6 +48,17 @@ In your POM:
                </plugin>
            </plugins>
        </reporting>
+       [...]
+       <pluginRepositories>
+	       <pluginRepository>
+			   <id>itm-maven-repository-releases</id>
+			   <url>http://www.itm.uni-luebeck.de/projects/maven/releases/</url>
+		   </pluginRepository>		   
+	   </pluginRepositories>
+	   <repository>
+			<id>itm-maven-repository-releases</id>
+			<url>http://www.itm.uni-luebeck.de/projects/maven/releases/</url>
+		</repository>
     </project>
 
 Generate a report on the command line:
