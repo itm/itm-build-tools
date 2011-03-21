@@ -17,6 +17,7 @@ In your POM:
       <build>
     	[...]
     	<pluginManagement>
+    		  <plugins>     
     		       [...]
                    <plugin>
                        <groupId>org.apache.maven.plugins</groupId>
@@ -34,6 +35,7 @@ In your POM:
     			           <enableRulesSummary>false</enableRulesSummary>
                        </configuration>
                    </plugin>
+               </plugins>    
     	</pluginManagement>
        </build>
        [...]
