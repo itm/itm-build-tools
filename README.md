@@ -6,12 +6,12 @@ ITM Build Tools shall help to ease and harmonize e.g. the coding style in our IT
 Checkstyle
 ----------
 
-We use [Checkstyle][checkstyle] to enforce certain coding style guidlines.
+We use [Checkstyle][checkstyle] to enforce certain coding style guidlines. Checkstyle can be executed via maven.
 
 Usage
 -----
 
-In your POM:
+In your POM add the following sections:
 
     <project>
       <build>
