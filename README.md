@@ -68,7 +68,9 @@ More info can be found at: [Checkstyle Project][checkstyle] and [Maven Checkstyl
 What if my code exceeds the 120 characters limit?
 -------------------------------------------------
 
-          //
+Here are some examples how this situation can be handled:
+
+     //
      // Example 1: Conditions in if-statments
      //
      if (authenticationManager.getSecretAuthenticationKeys() != null
