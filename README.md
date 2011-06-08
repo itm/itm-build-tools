@@ -72,17 +72,15 @@ What if my code exceeds the 120 character line limit?
 
 Here are some examples how this situation can be handled:
 
-     //
-     // Example 1: Conditions in if-statments
-     //
+Example 1: Conditions in if-statments
+
      if (authenticationManager.getSecretAuthenticationKeys() != null
              && !authenticationManager.getSecretAuthenticationKeys().isEmpty()) {
          ...
      }
 
-     //
-     // Example 2: Long method signatures
-     //
+Example 2: Long method signatures
+
      public List<SecretReservationKey> makeReservation(final String rsEndpointUrl,
                                                        final List<SecretAuthenticationKey> secretAuthenticationKeys,
                                                        final ConfidentialReservationData confidentialReservationData)
@@ -90,9 +88,9 @@ Here are some examples how this situation can be handled:
         ...
      }
      
-     //
-     // Example 3: Constructors with many arguments
-     //
+
+Example 3: Constructors with many arguments
+
      public ReservationEditPresenter(final WiseUiGinjector injector,
                                      final EventBus eventBus,
                                      final ReservationEditView view,
@@ -102,12 +100,16 @@ Here are some examples how this situation can be handled:
          ...
      }
      
-     // 
-     // Example 4: Long assignments
-     //
+
+Example 4: Long assignments
+
      final SecretReservationKey secretReservationKey
         = new SecretReservationKey(data.getUrnPrefix(), data.getSecretReservationKey());
+		
+Example 5: Long class signatures
 
+	 public class SimpleSerialPortConnection extends AbstractConnection 
+		 implements SerialPortConnection, SerialPortEventListener {
 
 [checkstyle]:http://checkstyle.sourceforge.net/
 [maven-checkstyle-plugin]:http://maven.apache.org/plugins/maven-checkstyle-plugin/
