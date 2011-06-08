@@ -6,7 +6,7 @@ ITM Build Tools shall help to ease and harmonize e.g. the coding style in our IT
 Checkstyle
 ----------
 
-We use [Checkstyle][checkstyle] to enforce certain coding style guidlines. Checkstyle can be executed via maven.
+We use [Checkstyle][checkstyle] to enforce certain coding style guidlines. Checkstyle can be executed with Maven.
 
 Usage
 -----
@@ -61,7 +61,9 @@ Generate a report on the command line:
 
     $ mvn checkstyle:checkstyle site
 
-This generates a checkstyle reportand a HTML page. "site" makes sure, that all css-Files, etc. are avaiable. The html page(s) is(are) located at ${module}/target/site/checkstyle.html. If you are only interested in the plain report, you can leave out the "site" target.
+This generates a checkstyle reportand a HTML page. Using the target `site` we assure, that all css-Files, etc. are avaiable. The html page(s) is(are) located at `${module}/target/site/checkstyle.html`. 
+
+If you are only interested in the plain report, you can leave out the `site` target.
 
 More info can be found at: [Checkstyle Project][checkstyle] and [Maven Checkstyle Plugin][maven-checkstyle-plugin].
 
