@@ -110,6 +110,8 @@ Example 5: Long class signatures
 
 	 public class SimpleSerialPortConnection extends AbstractConnection 
 		 implements SerialPortConnection, SerialPortEventListener {
+		 ...
+	 }
 
 [checkstyle]:http://checkstyle.sourceforge.net/
 [maven-checkstyle-plugin]:http://maven.apache.org/plugins/maven-checkstyle-plugin/
