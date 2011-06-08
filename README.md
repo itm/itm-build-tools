@@ -68,12 +68,12 @@ More info can be found at: [Checkstyle Project][checkstyle] and [Maven Checkstyl
 What if my code exceeds the 120 characters limit?
 -------------------------------------------------
 
-     //
+          //
      // Example 1: Conditions in if-statments
      //
      if (authenticationManager.getSecretAuthenticationKeys() != null
              && !authenticationManager.getSecretAuthenticationKeys().isEmpty()) {
-         userName = authenticationManager.getSecretAuthenticationKeys().get(0).getUsername();
+         ...
      }
 
      //
@@ -83,6 +83,8 @@ What if my code exceeds the 120 characters limit?
                                                        final List<SecretAuthenticationKey> secretAuthenticationKeys,
                                                        final ConfidentialReservationData confidentialReservationData)
      throws AuthenticationException, ReservationException {
+        ...
+     }
      
      //
      // Example 3: Constructors with many arguments
@@ -93,12 +95,7 @@ What if my code exceeds the 120 characters limit?
                                      final ReservationServiceAsync service,
                                      final ReservationManager reservationManager,
                                      final ReservationMessages messages) {
-         this.injector = injector;
-         this.eventBus = new EventBusManager(eventBus);
-         this.view = view;
-         this.reservationService = service;
-         this.reservationManager = reservationManager;
-         this.messages = messages;
+         ...
      }
      
      // 
