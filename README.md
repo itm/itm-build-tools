@@ -65,6 +65,48 @@ This generates a checkstyle reportand a HTML page. "site" makes sure, that all c
 
 More info can be found at: [Checkstyle Project][checkstyle] and [Maven Checkstyle Plugin][maven-checkstyle-plugin].
 
+What if my code exceeds the 120 characters limit?
+-------------------------------------------------
+
+     //
+     // Example 1: Conditions in if-statments
+     //
+     if (authenticationManager.getSecretAuthenticationKeys() != null
+             && !authenticationManager.getSecretAuthenticationKeys().isEmpty()) {
+         userName = authenticationManager.getSecretAuthenticationKeys().get(0).getUsername();
+     }
+
+     //
+     // Example 2: Long method signatures
+     //
+     public List<SecretReservationKey> makeReservation(final String rsEndpointUrl,
+                                                       final List<SecretAuthenticationKey> secretAuthenticationKeys,
+                                                       final ConfidentialReservationData confidentialReservationData)
+     throws AuthenticationException, ReservationException {
+     
+     //
+     // Example 3: Constructors with many arguments
+     //
+     public ReservationEditPresenter(final WiseUiGinjector injector,
+                                     final EventBus eventBus,
+                                     final ReservationEditView view,
+                                     final ReservationServiceAsync service,
+                                     final ReservationManager reservationManager,
+                                     final ReservationMessages messages) {
+         this.injector = injector;
+         this.eventBus = new EventBusManager(eventBus);
+         this.view = view;
+         this.reservationService = service;
+         this.reservationManager = reservationManager;
+         this.messages = messages;
+     }
+     
+     // 
+     // Example 4: Long assignments
+     //
+     final SecretReservationKey secretReservationKey
+        = new SecretReservationKey(data.getUrnPrefix(), data.getSecretReservationKey());
+
 
 [checkstyle]:http://checkstyle.sourceforge.net/
 [maven-checkstyle-plugin]:http://maven.apache.org/plugins/maven-checkstyle-plugin/
