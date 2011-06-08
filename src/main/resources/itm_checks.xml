@@ -49,6 +49,10 @@
 
 
     <module name="TreeWalker">
+		<!-- Set the default tabWidth to 4 -->
+		<!-- This prevents bug where e.g. the line length is calculated wrong -->
+		<!-- See http://checkstyle.sourceforge.net/config.html -->
+		<property name="tabWidth" value="4"/>
 
         <!-- Checks for Javadoc comments.                     -->
         <!-- See http://checkstyle.sf.net/config_javadoc.html -->
