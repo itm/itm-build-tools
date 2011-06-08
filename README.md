@@ -67,8 +67,8 @@ If you are only interested in the plain report, you can leave out the `site` tar
 
 More info can be found at: [Checkstyle Project][checkstyle] and [Maven Checkstyle Plugin][maven-checkstyle-plugin].
 
-What if my code exceeds the 120 characters limit?
--------------------------------------------------
+What if my code exceeds the 120 character line limit?
+-----------------------------------------------------
 
 Here are some examples how this situation can be handled:
 
